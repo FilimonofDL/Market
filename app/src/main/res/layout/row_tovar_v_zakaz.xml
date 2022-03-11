@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/standart_dp"
+    android:layout_marginRight="@dimen/standart_dp"
+    android:background="@android:color/background_light">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami"
+        android:background="@color/razdelenie_mezdu_panelkami"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami_micro"
+        android:background="@color/razdelenie_mezdu_panelkami_temnoe_uzkoe"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivTovar"
+        android:layout_width="@dimen/imageViewSmal"
+        android:layout_height="@dimen/imageViewSmal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAdresPoDostavke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/margin_otstup"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center_vertical"
+        android:maxLines="3"
+        android:text="ertgxc"
+        android:textColor="@color/colorNazvanie"
+        android:textSize="@dimen/shrift_sredniy"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cnBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdresPoDostavke">
+
+        <TextView
+            android:id="@+id/tvCenaOplata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/standart_dp"
+            android:text="35 000 000"
+            android:textColor="@color/colorCena"
+            android:textSize="@dimen/shrift_sredniy" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/otstup_mejdu_panelkami"
+            android:text="X"
+            android:textSize="@dimen/shrift_sredniy"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvCenaOplata"
+            app:layout_constraintStart_toEndOf="@+id/tvRubOpl" />
+
+        <TextView
+            android:id="@+id/tvRubOpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvKolihestvoOplata"
+            android:layout_marginStart="@dimen/otstup_mejdu_panelkami"
+            android:layout_toEndOf="@+id/tvKolihestvoOplata"
+            android:gravity="center_vertical"
+            android:text="@string/rub"
+            android:textColor="@color/colorCena"
+            android:textSize="@dimen/shrift_sredniy"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvKolihestvoOplata"
+            app:layout_constraintStart_toEndOf="@+id/tvCenaOplata" />
+
+        <TextView
+            android:id="@+id/tvKolihestvoOplata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCenaOplata"
+            android:layout_alignBottom="@+id/tvCenaOplata"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/otstup_mejdu_panelkami"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorCena"
+            android:textSize="@dimen/shrift_sredniy"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvCenaOplata"
+            app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

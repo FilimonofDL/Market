@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/cardview_light_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami_micro"
+        android:background="@color/razdelenie_mezdu_panelkami_temnoe_uzkoe"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cnUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami"
+        android:background="@color/razdelenie_mezdu_panelkami"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <CheckBox
+        android:id="@+id/chKorzina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivTovar"
+        android:layout_width="@dimen/razmerfoto"
+        android:layout_height="@dimen/razmerfoto"
+        android:layout_marginBottom="@dimen/otstup_mejdu_panelkami_micro"
+        android:layout_marginStart="8dp"
+        android:paddingBottom="@dimen/otstup_mejdu_panelkami_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chKorzina"
+        app:layout_constraintTop_toBottomOf="@+id/cnUp" />
+
+    <TextView
+        android:id="@+id/tvAdresPoDostavke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="left|center_vertical"
+        android:maxLines="3"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorNazvanie"
+        android:textSize="@dimen/shrift_krupniy"
+        app:layout_constraintBottom_toTopOf="@+id/tvRub2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/cnUp" />
+
+
+    <ImageButton
+        android:id="@+id/ibDelTovar"
+        android:layout_width="@dimen/distSmalButton"
+        android:layout_height="@dimen/distSmalButton"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKolihestvoKorzina"
+        app:layout_constraintEnd_toStartOf="@+id/tvKolihestvoKorzina"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toTopOf="@+id/tvKolihestvoKorzina"
+        app:srcCompat="@drawable/countplus1" />
+
+    <ImageButton
+        android:id="@+id/ibAddTovar"
+        android:layout_width="@dimen/distSmalButton"
+        android:layout_height="@dimen/distSmalButton"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKolihestvoKorzina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvKolihestvoKorzina"
+        app:layout_constraintTop_toTopOf="@+id/tvKolihestvoKorzina"
+        app:srcCompat="@drawable/cuntplusreal1" />
+
+    <EditText
+
+        android:id="@+id/tvKolihestvoKorzina"
+
+        android:layout_width="@dimen/imageViewSmal"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:nextFocusUp="@id/tvKolihestvoKorzina"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/cnBottom"
+        app:layout_constraintEnd_toStartOf="@+id/ibAddTovar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibDelTovar"
+        app:layout_constraintTop_toBottomOf="@+id/tvRub2" />
+
+    <TextView
+        android:id="@+id/tvRub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/otstup_mejdu_panelkami"
+        android:text="@string/rub"
+        android:textColor="@color/colorCena"
+        android:textSize="@dimen/shrift_krupniy"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvSposobDostavki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvSposobDostavki" />
+
+    <TextView
+        android:id="@+id/tvSposobDostavki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="4545"
+        android:textColor="@color/colorCena"
+        android:textSize="@dimen/shrift_krupniy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvKolihestvoKorzina"
+        app:layout_constraintEnd_toStartOf="@+id/tvRub2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdresPoDostavke" />
+
+</android.support.constraint.ConstraintLayout>

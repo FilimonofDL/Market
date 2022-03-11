@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Market</string>
+    <string name="obhStoimost">Общая стоимость</string>
+    <string name="kupit">К ЗАКАЗУ</string>
+    <string name="zakazat">ЗАКАЗАТЬ</string>
+    <string name="adres_dostavki">Адреса доставки</string>
+    <string name="izmenit">ИЗМЕНИТЬ</string>
+    <string name="sposob_oplati">Способ доставки</string>
+    <string name="kurier">Курьеру наличными</string>
+    <string name="oformlenie_zakaza">Оформление заказа</string>
+    <string name="adres">Адрес</string>
+    <string name="fio">Ф.И.О.</string>
+    <string name="dobavit_adres">Добавить новый адрес</string>
+    <string name="dobavit_adres_dostavki">Добавить адрес доставки</string>
+    <string name="kont_lico">Контактное лицо</string>
+    <string name="nnomer_mobilnogo">Номер мобильного</string>
+    <string name="ulica">Улица, абонентский ящик и т.п.</string>
+    <string name="kvartira">Квартира, корпус, и т.п.</string>
+    <string name="oblast">Республика/область/край</string>
+    <string name="gorod">Город</string>
+    <string name="index">Почтовый индекс</string>
+    <string name="adres_umolhanie">Задать как по умолчанию</string>
+    <string name="soxranit">СОХРАНИТЬ</string>
+    <string name="rub">руб.</string>
+    <string name="punkt">Пункт выдачи</string>
+    <string name="post">Почтой</string>
+    <string name="nomer_zakaza">Номер заказа:</string>
+    <string name="vremia_zakaza">Время заказа:</string>
+    <string name="kolihestvo">Количество</string>
+    <string name="itogo">Итого:</string>
+    <string name="ya_ihu">Я ищу...</string>
+    <string name="todo">TODO</string>
+    <string name="korzina">Корзина</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="nahat_pokupki">НАЧАТЬ ПОКУПКИ</string>
+    <string name="v_korzinu">ПОЛОЖИТЬ В КОРЗИНУ</string>
+</resources>

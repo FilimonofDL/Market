@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:minHeight="@dimen/razmerfoto"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/tvIzmenitAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioAdres"
+        android:layout_marginBottom="@dimen/otstup"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/izmenit"
+        android:textAllCaps="true"
+        android:textColor="@color/colorNazvanie"
+        android:textSize="@dimen/shrift_sredniy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioAdres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <RadioButton
+        android:id="@+id/radioAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvIzmenitAdres"
+        app:layout_constraintStart_toStartOf="@+id/tvIzmenitAdres"
+        app:layout_constraintTop_toBottomOf="@+id/tvIzmenitAdres" />
+
+    <TextView
+        android:id="@+id/tvSposobDostavki"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/fio"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/shrift_sredniy"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAdresPoDostavke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/adres"
+        android:textColor="@color/colorCena"
+        android:textSize="@dimen/shrift_sredniy"
+        app:layout_constraintEnd_toStartOf="@+id/tvIzmenitAdres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSposobDostavki" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami"
+        android:background="@color/razdelenie_mezdu_panelkami"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami_micro"
+        android:background="@color/razdelenie_mezdu_panelkami_temnoe_uzkoe"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

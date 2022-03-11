@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TovarPage.TovarPageActivity">
+
+    <ImageView
+        android:id="@+id/ivMainImagePageTovara"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+
+        android:adjustViewBounds="false"
+        android:background="@android:color/holo_blue_light"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/podlojk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/podlojk" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivIconkaTelejkiPageTovara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/korzina" />
+
+    <TextView
+        android:id="@+id/tvKorzinaCountPageTovara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/layout_bg"
+        android:paddingLeft="2dp"
+        android:paddingRight="@dimen/otstup_mejdu_panelkami"
+        android:text="10"
+        android:textColor="@color/fon_color"
+        android:textSize="@dimen/text_micro"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/ivIconkaTelejkiPageTovara"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLupaPageTovara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivIconkaTelejkiPageTovara"
+        app:layout_constraintTop_toTopOf="@+id/ivIconkaTelejkiPageTovara"
+        app:srcCompat="@drawable/ic_lupa" />
+
+    <TextView
+        android:id="@+id/tvOpisaniePageTovara"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="5"
+        android:text="Описание товара"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/shrift_sredniy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMainImagePageTovara" />
+
+    <TextView
+        android:id="@+id/tvCenaPageTovara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="10 100"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/shrift_krupniy"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpisaniePageTovara" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/rub"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/shrift_krupniy"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCenaPageTovara"
+        app:layout_constraintStart_toEndOf="@+id/tvCenaPageTovara" />
+
+    <Button
+        android:id="@+id/btVKorzinuPageTovara"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/layout_bg"
+        android:text="@string/v_korzinu"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/btKKorzinePageTovara"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgrbelizakruglzeleniy"
+        android:text="@string/kupit"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+
+</android.support.constraint.ConstraintLayout>

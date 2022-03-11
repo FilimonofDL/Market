@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.lavaliva.market">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Korzina"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".OformlenieZakaza" />
+        <activity android:name=".Adres.AdresaDostavki" />
+        <activity
+            android:name=".Adres.DobavitAdresDostavki"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".SposobOplatiIDostavki" />
+        <activity android:name=".TovarList.SpisokTovarovPrilavok" />
+        <activity android:name=".ZakazList.SpisokZakazov" />
+        <activity android:name=".TovarPage.TovarPageActivity" />
+        <activity android:name=".Poisk.PoiskActivity" />
+        <activity android:name=".ResPoiskaStranica.ResPoiskaStranicaActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorCena">#4a5256</color>
+    <color name="colorCena2">#969696</color>
+    <color name="colorNazvanie">#0072bc</color>
+    <color name="fon_color">#f2f2f2</color>
+    <color name="herniy">#000000</color>
+    <color name="color_red_main">#fd0001</color>
+    <color name="red_main">#fd0001</color>
+    <color name="green_main">#00fd72</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="razdelenie_mezdu_panelkami">#f1f1f1</color>
+    <color name="razdelenie_mezdu_panelkami_temnoe_uzkoe">#d6d6d7</color>
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background">
+
+    <ImageView
+        android:id="@+id/ivTovar"
+        android:layout_width="@dimen/razmerfoto"
+        android:layout_height="@dimen/razmerfoto"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cnBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <TextView
+        android:id="@+id/tvSkidkaTov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:background="@drawable/layout_bg"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/tvAdresPoDostavke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <TextView
+        android:id="@+id/tvAdresPoDostavke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:maxLines="@integer/lines_text"
+        android:text="TextView"
+        android:textColor="@color/colorNazvanie"
+        android:textSize="@dimen/shrift_sredniy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSposobDostavki"
+        app:layout_constraintEnd_toStartOf="@+id/ibKupit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/tvSkidkaTov" />
+
+    <TextView
+        android:id="@+id/tvSposobDostavki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 000"
+        android:textColor="@color/colorCena2"
+        android:textSize="@dimen/shrift_sredniy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvCenaSoSkidkoy"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdresPoDostavke" />
+
+    <TextView
+        android:id="@+id/tvCenaSoSkidkoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/cnBottom"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/ivTovar"
+        app:layout_constraintTop_toBottomOf="@+id/tvSposobDostavki" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/otstup_mejdu_panelkami"
+        android:text="@string/rub"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCenaSoSkidkoy"
+        app:layout_constraintEnd_toStartOf="@+id/tvKKorzine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCenaSoSkidkoy" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/otstup_mejdu_panelkami"
+        android:text="@string/rub"
+        android:textColor="@color/colorCena2"
+        android:textSize="@dimen/shrift_sredniy"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvSposobDostavki"
+        app:layout_constraintEnd_toStartOf="@+id/tvKKorzine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvSposobDostavki" />
+
+    <ImageButton
+        android:id="@+id/ibKupit"
+        android:layout_width="@dimen/shirina_poley_vvoda"
+        android:layout_height="@dimen/shirina_poley_vvoda"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgrbelizakruglsiniy"
+        app:layout_constraintBottom_toTopOf="@+id/cnBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:srcCompat="@drawable/korzina" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami_micro"
+        android:background="@color/razdelenie_mezdu_panelkami"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/otstup_mejdu_panelkami"
+        android:background="@color/razdelenie_mezdu_panelkami_temnoe_uzkoe"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvKKorzine"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/zakazat"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibKupit"
+        app:layout_constraintVertical_bias="0.78" />
+
+</android.support.constraint.ConstraintLayout>

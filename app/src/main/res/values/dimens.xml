@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="distSmalButton">40dp</dimen>
+    <dimen name="shirinaPanelek">70dp</dimen>
+    <dimen name="otstup">10dp</dimen>
+    <dimen name="shrift_sredniy">17sp</dimen>
+    <dimen name="shrift_melkiy">8sp</dimen>
+    <dimen name="shrift_krupniy">26sp</dimen>
+    <dimen name="otstup_mejdu_panelkami">3dp</dimen>
+    <dimen name="margin_otstup">20dp</dimen>
+    <dimen name="zakruglTV">10dp</dimen>
+    <dimen name="standartdp">8dp</dimen>
+    <dimen name="imageViewSmal">70dp</dimen>
+    <dimen name="shirina_poley_vvoda">33dp</dimen>
+    <dimen name="text_micro" />
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="razmerfoto">140dp</dimen>
+    <dimen name="otstup_mejdu_panelkami_micro">1dp</dimen>
+    <dimen name="standart_dp">8dp</dimen>
+</resources>
